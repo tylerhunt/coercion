@@ -1,0 +1,9 @@
+Coercion
+========
+
+A simple Rails plugin that adds a before_validation callback to all Active
+Record models to converts all blank attribute values into nil values so that
+NULLs are stored in the database instead of empty strings.
+
+
+Copyright (c) 2008 Tyler Hunt, released under the MIT license
