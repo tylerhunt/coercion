@@ -14,11 +14,9 @@ module Coercion
   module ClassMethods
     def coerce_serialized_attributes
       serialized_attributes.each do |column_name, type|
-        module_eval <<-DEF, __FILE__, __LINE__ + 1 if type == Symbol
-          def #{column_name}=(value)
-            write_attribute(:#{column_name}, value ? value.to_sym : value)
-          end
-        DEF
+        define_method("#{attr_name}=") do |value|
+          write_attribute(attr_name, value && value.any? ? value.to_sym : nil)
+        end if type == Symbol
       end
     end
   end
