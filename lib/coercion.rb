@@ -1,4 +1,4 @@
-require 'coercion/railtie'
+require 'coercion/railtie' if defined?(::Rails::Railtie)
 
 module Coercion
   module CoerceEmptyStringsToNil
