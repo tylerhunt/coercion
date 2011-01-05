@@ -8,5 +8,5 @@ Gem::Specification.new do |gem|
   gem.files = Dir['init.rb', 'lib/**/*']
   gem.add_dependency 'activerecord', '~> 3.0.3'
   gem.add_dependency 'activesupport', '~> 3.0.3'
-  gem.add_dependency 'railtie', '~> 3.0.3'
+  gem.add_dependency 'railties', '~> 3.0.3'
 end
