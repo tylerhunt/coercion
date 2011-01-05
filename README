@@ -5,4 +5,4 @@ A plugin for ActiveRecord to strip string values and coerce empty strings to nil
 on assignment.
 
 
-Copyright (c) 2008-2010 Tyler Hunt, released under the MIT license
+Copyright (c) 2008-2011 Tyler Hunt, released under the MIT license
