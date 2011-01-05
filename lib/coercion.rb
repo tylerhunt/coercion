@@ -1,12 +1,17 @@
 require 'coercion/railtie'
 
 module Coercion
-  def write_attribute(attr_name, value)
-    if value.is_a?(String)
-      value.strip!
-      value = nil if value.empty?
+  module CoerceEmptyStringsToNil
+    def write_attribute(attr_name, value)
+      value = nil if value.is_a?(String) && value.empty?
+      super
     end
+  end
 
-    super
+  module StripStrings
+    def write_attribute(attr_name, value)
+      value.strip! if value.is_a?(String)
+      super
+    end
   end
 end
