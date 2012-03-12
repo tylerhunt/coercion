@@ -1,3 +1,4 @@
+require 'coercion/version'
 require 'coercion/railtie' if defined?(::Rails::Railtie)
 
 module Coercion

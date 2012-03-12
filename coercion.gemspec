@@ -1,7 +1,9 @@
+require './lib/coercion/version'
+
 Gem::Specification.new do |gem|
   gem.name = 'coercion'
-  gem.version = '0.0.3'
-  gem.summary = 'A plugin for ActiveRecord to strip string and coerce empty strings to nil on assignment.'
+  gem.version = Coercion::VERSION
+  gem.summary = 'An ActiveRecord plugin to strip whitespace from strings and coerce empty strings to nil values on assignment.'
   gem.homepage = %q{http://github.com/tylerhunt/coercion}
   gem.authors = ['Tyler Hunt']
 
