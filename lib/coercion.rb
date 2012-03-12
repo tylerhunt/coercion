@@ -11,7 +11,7 @@ module Coercion
   module StripStrings
     def write_attribute(attr_name, value)
       value = value.strip if value.is_a?(String)
-      super
+      super(attr_name, value)
     end
   end
 end
