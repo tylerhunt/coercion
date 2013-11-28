@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+  * Require Rails 4 ([Tyler Hunt][tylerhunt])
+
 ## 0.0.4 (2012-03-12)
 
   * Allow for frozen strings ([Dray Lacy][omghax])
