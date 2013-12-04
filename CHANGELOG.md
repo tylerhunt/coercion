@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 (2013-12-03)
 
   * Require Rails 4 ([Tyler Hunt][tylerhunt])
 
