@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport', '~> 4.0'
   spec.add_dependency 'railties', '~> 4.0'
   spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
 
   spec.files = `git ls-files`.split($\)
   spec.executables = spec.files.grep(%r{^bin/}).map { |f| File.basename(f) }
